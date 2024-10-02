@@ -1,4 +1,4 @@
-import { Container, Title, TopBar } from "@/components/shared"
+import { Container, Filters, Title, TopBar } from "@/components/shared"
 
 export default function Home() {
     return (
@@ -9,7 +9,7 @@ export default function Home() {
 
             <TopBar />
 
-            <Container className={"pb-14"}>
+            <Container className={"mt-9 pb-14"}>
                 <div className={"flex gap-14"}>
                     {/*   Filters    */}
                     <div className={"w-md"}>
@@ -18,10 +18,10 @@ export default function Home() {
 
                     {/*  Products list  */}
                     <div className="flex-1">
-                        <div className="flex flex-col gap-16">
-                            <ProductsGroupList title="Пиццы" items={[1, 2, 3, 4, 5]} />
-                            <ProductsGroupList title="Комбо" items={[1, 2, 3, 4, 5]} />
-                        </div>
+                        {/*<div className="flex flex-col gap-16">*/}
+                        {/*    <ProductsGroupList title="Пиццы" items={[1, 2, 3, 4, 5]} />*/}
+                        {/*    <ProductsGroupList title="Комбо" items={[1, 2, 3, 4, 5]} />*/}
+                        {/*</div>*/}
 
                         {/*<div className="flex items-center gap-6 mt-12">*/}
                         {/*    <Pagination pageCount={3} />*/}
