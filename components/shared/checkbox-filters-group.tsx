@@ -2,7 +2,6 @@ import { FC } from "react"
 import { cn } from "@/lib/utils"
 import { FilterChecboxProps, FilterCheckbox } from "@/components/shared/filter-checkbox"
 import { Input } from "@/components/ui"
-import { log } from "node:util"
 
 type Item = FilterChecboxProps
 
@@ -30,7 +29,6 @@ export const CheckboxFiltersGroup: FC<Props> = ({
     return (
         <div className={cn("", className)}>
             <p className="font-bold mb-3">{title}</p>
-
             <div className="mb-5">
                 <Input placeholder={searchInputPlaceholder} className="bg-gray-50 border-none" />
             </div>
